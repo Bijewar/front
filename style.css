@@ -1,0 +1,441 @@
+@font-face {
+    font-family: lost;
+    src: url(./DELIRIUM\ NCV.woff2);
+}
+@font-face {
+    font-family: gol;
+    src: url(./Gilroy-Regular.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#menu{
+    height: 100%;
+    width: 30vw;
+    background-color: beige;
+    position: absolute;
+    z-index: 99999999999999999;
+    left: 10%;
+    transform: translate(-50%,-100%);
+    transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+#menu a{
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+    font-family: gol;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    cursor: pointer;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    background: #cbcaa5;
+    overflow: hidden;
+  
+}
+#profile{
+    height: 40vw;
+    width: 40vw;
+    background-color: gray;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+}
+#profile img{
+    position: relative;
+    top: 20%;
+    left: 10%;
+    height: 90%;
+    
+    filter: drop-shadow(15px 15px 10px black);
+}
+#nav{
+    height: 10vh;
+    width: 10vw;
+    
+
+}
+#on{
+
+    position: absolute;
+    top: 50px;
+    left: 30%;
+    font-size: 40px;
+    transform: translate(-50%,-50%);
+    transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+#mon{
+    
+    font-size: 40px;
+padding-top: 40px;
+padding-left: 40px;
+    display: flex;
+
+}
+#nav h6{
+    font-family: lost;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 30px;
+    text-shadow: 5px black;
+    margin-left: 40px;
+    margin-top: 20px;
+    line-height: 40px;
+
+    
+}
+#join{
+    height: auto;
+    width: auto;
+}
+#add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    position: absolute;
+    border-radius: 50px;
+    display: flex;
+height: 2vw;
+font-size: 25px;
+width: 2vw;
+    top: 40px;
+    left: 90%;
+
+}
+#join h5{
+    position: absolute;
+    top: 43px;
+    left: 88%;
+    font-size: 20px;
+    font-family: lost;
+    
+    
+    font-weight: 100;
+}
+#leftb {
+    font-family: gol;
+    font-size: 20px;
+    font-weight: 10;
+    top: 70%;
+    left: 3%;
+    line-height: 20px;
+    position: relative;
+    
+
+}
+#leftb p{
+    opacity: 0.5;
+    font-family: gol;
+}
+#date{
+   height: 100vh;
+   width:10vw;
+position: absolute;
+top: 0%;
+left: 88%;
+
+
+}
+dets{
+    
+height: 8vh;
+width: 5vw;
+border: 1px black solid;
+
+}
+#skew{
+    min-height: 100vh;
+    width: 100%;
+
+}
+#load{
+    overflow-x: auto;
+    display: flex;
+    gap: 100px;
+    width: 100%;
+
+    min-height: 60vh;
+    margin-top: 30px;
+    padding: 0 5vw;
+}
+#load .slide{
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    flex-shrink: 0;
+    position: relative;
+    width: 50%;
+    min-height: inherit;
+    overflow: hidden;
+    will-change: transform;
+    transform: skewX(0deg);
+}
+.slide img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slide img:nth-child(1){
+    
+    filter: grayscale();
+}
+.slide img:nth-child(2){
+    clip-path: circle(0% at 100 100px); 
+    transition: cubic-bezier(0.19, 1, 0.22, 1).5s;
+    background-color: aliceblue;
+}
+#load::-webkit-scrollbar{
+    display: none;
+}
+#trest h1{
+    font-size: 8vw;
+    font-family: lost;
+    
+}
+#trest{
+    margin-top: 5vw;
+    margin-left: 4vw;
+    
+    
+}
+#trest p{
+    height: 8vh;
+    font-family: gol;
+
+    width: 40vw;
+}
+#solve{
+    min-height: 100vh;
+    width: 100%;
+    
+    overflow: hidden;
+    display: flex;
+}
+#minar{
+height: 90%;
+position: relative;
+top: 5%;
+left: 25%;
+z-index: 9999;
+object-fit: cover;
+background-size: cover;
+    
+}
+#no p{
+    font-size: 20vw;
+    position: relative;
+
+    font-family: lost;
+    opacity: .5;
+    left: 40vw;
+    color: red;
+    top: 38vw;
+    z-index: 99999999999999999999999999999;
+    transform: translate(-50%,-50%);
+}
+
+#txt{
+    font-size: 6vw;
+    color: black;
+    font-family: gilroy;
+    font-weight: 700;
+    margin: 20vh 5vw;
+z-index: 999999999999999999999999;
+}
+#manas{
+    font-size: 15px;
+width: 15vw;
+font-weight: 100;
+position: relative;
+top: 40%;
+left: 10%;
+height: 20vh;
+font-family: gilroy;
+z-index: 9999999999999999999999999;
+}
+#least{
+   min-height: 100vh;
+    width: 100%;
+display: flex;
+overflow: hidden;
+}
+#least img{
+
+
+    top: 30%;
+    left: -9%;
+
+
+
+}
+#left {
+flex-direction: column;
+display: flex;
+min-height: 100vh;
+padding: 0 15vw;
+width: 60%;
+
+
+} 
+#left h3{
+    margin-top: 10vh ;
+    font-family: lost;
+    font-size: 4vw;
+}
+#left a{
+margin-top: 50px;
+text-decoration: none;
+letter-spacing: 2px;
+font-size: 20px;
+color: black;
+opacity: 0.5;
+
+}
+#left a:nth-child(2){
+    font-size: 3vw;
+    font-family: lost;
+    color: black;
+    opacity: 1;
+}
+#imgs{
+    min-height: 100vh;
+    
+    width: 40vw;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+#imgs img{
+    position: relative;
+    left: 17%;
+    top: 0%;
+}
+@media (max-width: 500px) {
+#add{
+    height: 7vw;
+    width: 7vw;
+    top: 38px;
+}
+#join h5{
+    left: 83%;
+}
+#nav i{
+    font-size: 30px;
+padding-top: 38px;
+padding-left: 10px;
+    
+}
+#nav h6{
+    margin-top: 40px;
+    margin-left: 13px;
+}
+#profile{
+    height: 80vw;
+    width: 80vw;
+}
+#load {
+    min-height: 40vh;
+    gap: 30px;
+}
+#load .slide{
+    width: 100%;
+}
+#trest p{
+    height: 15vh;
+    width: 60vw;
+    gap: 30px
+    ;
+}
+#trest h1{
+    gap: 30px;
+}
+#minar{
+    width: 80%;
+    height: 70%;
+}
+#solve{
+    min-height: 60vh;
+}
+#skew{
+    min-height: 70vh;
+}
+#txt p{
+    margin: -10vh 10vw 5vh;
+}
+#manas{
+    height: 15vh;
+    width: 55vw;
+    left: 0%;
+    font-size: 10px;
+    opacity: 1;
+}
+#minar{
+    left: -20%;
+}
+#no p{
+    font-size: 40vw;
+    top: 90vw;
+    left: 10vw;
+}
+#least{
+    flex-direction: column;
+}
+#left{
+    width: 100%;
+    min-height: 50vh;
+}
+#left h3{
+    font-size: 20vw;
+    
+    z-index: 999999999999999;
+    top: -15%;
+}
+#left a:nth-child(2){
+    font-size: 15vw;
+
+}
+#left a{
+    font-size: 20px;
+    top: 0%;
+    position: relative;
+    left: 10%;
+    margin: -1px;
+    padding: 5px;
+}
+
+#imgs{
+    min-height: 100%;
+}
+#imgs img{
+    height: 70vh;
+left:0%;
+width: 100vw;
+    position: relative;
+
+}
+#menu{
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+    position: absolute;
+    z-index: 99999999999999999;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+#on{
+left: 9%;
+}
+}
